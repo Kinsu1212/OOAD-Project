@@ -17,7 +17,7 @@ function Assignment() {
     const fetchAssignments = async () => {
       try {
         localStorage.setItem('assignment_type', 'homework');
-        const response = await fetch('http://ec2-54-153-120-83.us-west-1.compute.amazonaws.com:5000/get_assignment', {
+        const response = await fetch('ec2-54-183-22-164.us-west-1.compute.amazonaws.com:5000/get_assignment', {
                                   method: 'POST',
                                   headers: {
                                     'Content-Type': 'application/json'
@@ -51,7 +51,7 @@ function Assignment() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch('http://ec2-54-153-120-83.us-west-1.compute.amazonaws.com:5000/create_assignment', {
+      const response = await fetch('ec2-54-183-22-164.us-west-1.compute.amazonaws.com:5000/create_assignment', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -85,7 +85,7 @@ function Assignment() {
   const togglePublish = async (assignmentId, isPublished) => {
     try {
       localStorage.setItem('assignment_id', assignmentId);
-      const response = await fetch(`http://ec2-54-153-120-83.us-west-1.compute.amazonaws.com:5000/toggle_publish/${assignmentId}`, {
+      const response = await fetch(`ec2-54-183-22-164.us-west-1.compute.amazonaws.com:5000/toggle_publish/${assignmentId}`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({is_published: isPublished ? 0 : 1 })  // Toggle the state

@@ -6,7 +6,7 @@ import { useEffect, useState } from 'react';
 async function getHistoricCourses(studentId) {
   try {
     //localStorage.setItem('user_id', 403); 
-    const response = await fetch(`http://ec2-54-153-120-83.us-west-1.compute.amazonaws.com:5000/get_previous_faculty_courses`,
+    const response = await fetch(`ec2-54-183-22-164.us-west-1.compute.amazonaws.com:5000/get_previous_faculty_courses`,
       {
         method: 'POST',
         headers: {

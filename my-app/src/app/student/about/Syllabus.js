@@ -11,7 +11,7 @@ export default function Syllabus() {
   useEffect(() => {
     const fetchSyllabus = async () => {
       try {
-        const response = await fetch('http://ec2-54-153-120-83.us-west-1.compute.amazonaws.com:5000/get_syllabus', {
+        const response = await fetch('ec2-54-183-22-164.us-west-1.compute.amazonaws.com:5000/get_syllabus', {
                                   method: 'POST',
                                   headers: {
                                     'Content-Type': 'application/json'

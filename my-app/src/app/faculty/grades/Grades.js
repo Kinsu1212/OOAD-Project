@@ -9,7 +9,7 @@ function Grades() {
   useEffect(() => {
     const fetchGrades = async () => {
       try {
-        const response = await axios.post('http://ec2-54-153-120-83.us-west-1.compute.amazonaws.com:5000/get_scores_by_student', {
+        const response = await axios.post('ec2-54-183-22-164.us-west-1.compute.amazonaws.com:5000/get_scores_by_student', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             course_id: localStorage.getItem('courseCode')

@@ -15,7 +15,7 @@ function FacultyList() {
     }, []);
 
     const fetchFaculties = async () => {
-        const response = await fetch('http://ec2-54-153-120-83.us-west-1.compute.amazonaws.com:5000/faculty', {
+        const response = await fetch('ec2-54-183-22-164.us-west-1.compute.amazonaws.com:5000/faculty', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({faculty_id: localStorage.getItem('user_id')})
@@ -26,7 +26,7 @@ function FacultyList() {
     };
 
     const fetchCourses = async (facultyId) => {
-        const response = await fetch('http://ec2-54-153-120-83.us-west-1.compute.amazonaws.com:5000/get_courses_by_faculty', {
+        const response = await fetch('ec2-54-183-22-164.us-west-1.compute.amazonaws.com:5000/get_courses_by_faculty', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ faculty_id: facultyId })
@@ -37,7 +37,7 @@ function FacultyList() {
     };
 
     const fetchStudents = async (courseId) => {
-        const response = await fetch('http://ec2-54-153-120-83.us-west-1.compute.amazonaws.com:5000/people_in_course', {
+        const response = await fetch('ec2-54-183-22-164.us-west-1.compute.amazonaws.com:5000/people_in_course', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ course_id: courseId })
@@ -109,7 +109,7 @@ export default FacultyList;
 //     useEffect(() => {
 //         async function fetchFaculty() {
 //             try {
-//                 const response = await fetch('http://ec2-54-153-120-83.us-west-1.compute.amazonaws.com:5000/faculty', {
+//                 const response = await fetch('ec2-54-183-22-164.us-west-1.compute.amazonaws.com:5000/faculty', {
 //                     method: 'POST',
 //                     headers: { 'Content-Type': 'application/json' },
 //                     body: JSON.stringify({ user_id: localStorage.getItem('user_id') })
