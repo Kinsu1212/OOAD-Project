@@ -1,0 +1,50 @@
+.assignments-container {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin-left: 260px;
+}
+
+.assignment-list {
+    margin-top: 20px;
+}
+
+.assignment-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.assignment-content {
+    flex: 1; 
+    text-align: left;
+}
+
+.assignment-points {
+    margin-right: 10px;
+}
+
+.grade-input {
+    width: 100px;
+    text-align: right;
+}
+
+.assign-btn {
+    padding: 5px 10px;
+    margin-left: 5px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.assign-btn:hover {
+    background-color: #45a049;
+}
+
+
+

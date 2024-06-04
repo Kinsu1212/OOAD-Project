@@ -1,0 +1,55 @@
+/* Main content area where courses are displayed */
+.main-content {
+  margin-left: 500px; /* Adds margin to leave space for the sidebar */
+  padding: 120px; /* Padding inside the content area */
+}
+
+/* Styles for individual course entries */
+.course-item {
+  background-color: #f7f4f4; /* White background for each course */
+  border-bottom: 1px #acacac; /* Adds a border between courses */
+  padding: 10px; /* Padding inside each course item */
+  margin-bottom: 5px; /* Space between courses */
+  width: calc(100% - 220px);
+  margin-left: 220px;
+  text-align: center;
+  border-radius: 10px;
+  margin-bottom: 5px;
+}
+
+/* Header in the main content area */
+.account-header-assign {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: calc(100% - 220px);
+  background-color: #0056b3;
+  padding: 10px 20px;
+  margin-top: 10px;
+  color: white;
+  border-radius: 10px;
+  margin: 10px 0 10px 220px;
+}
+
+select,
+button {
+  padding: 8px 12px; /* Uniform padding for better touch targets */
+  margin: 0 10px 0 0; /* Right margin for the dropdown, none for the button */
+  border: 1px solid #ccc; /* Subtle border for definition */
+  background-color: #e6e6e6; /* Neutral background for dropdown */
+  border-radius: 4px; /* Rounded corners for both elements */
+}
+button {
+  background-color: #0056b3; /* Consistent blue color for buttons */
+  color: white; /* White text for contrast */
+}
+
+button:hover {
+  background-color: #003d79; /* Darker blue on hover */
+}
+
+/* Ensure body has no margin to handle full width properly */
+body {
+  margin: 0; /* Removes default margin */
+  font-family: Arial, sans-serif; /* Sets a clean, modern font */
+}

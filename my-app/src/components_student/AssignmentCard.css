@@ -1,0 +1,46 @@
+.assignment-card-parent{
+    display: flex;
+    flex-direction: column;
+    margin: 1%;
+    padding: 1%;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 60%;
+    background-color: #f0f0f0;
+
+}
+.assignment-links{
+    text-decoration: none;
+}
+
+/* .assignment-card{
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    margin: 1%;
+    padding: 1%;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 80%;
+    background-color: #f0f0f0;
+} */
+
+.assignment-title{
+    margin: 1%;
+    font-size: large;
+    font-weight: bold;
+    color: black;
+
+}
+
+.assignment-car-line2{
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #0000009c;
+    font-size: small;
+}
+
+
+

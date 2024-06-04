@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Text Editor</title>
+<style>
+    div#editor {
+        width: 80%;
+        height: 300px;
+        border: 1px solid #ccc;
+        padding: 10px;
+        overflow-y: scroll;
+        white-space: pre-wrap; /* Maintains whitespace formatting */
+        outline: none;
+    }
+</style>
+</head>
+<body>
+<div contenteditable="true" id="editor" onkeydown="checkEnter(event)"></div>
+
+<script src="script.js"></script>
+</body>
+<script>
+    function checkEnter(e) {
+        // Check if the key pressed is 'Enter' and not holding the 'Shift' key
+        if (e.key === "Enter" && !e.shiftKey) {
+            e.preventDefault(); // Prevent default Enter behavior
+            document.execCommand('insertHTML', false, '<br><br>'); // Insert two line breaks for a new paragraph
+        }
+    }    
+</script>
+</html>

@@ -1,0 +1,38 @@
+/* .subsidebar {
+    background-color: #afaeae; /* Light grey background 
+    width: 17vb; /* Set the width of the sidebar 
+    height: 100vh; /* Full-height 
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) 
+    left: 15vb;
+    overflow-x: hidden; /* Disable horizontal scroll 
+    padding-top: 20px;
+  } */
+
+.subsidebar {
+  background-color: #afaeae;
+  width: 15vb; /* Set the width of the sidebar */
+  height: 100vh; /* Full-height */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  left: 15vb; /* Disable horizontal scroll */
+  top: 0;
+  overflow-x: hidden;
+  padding: 10px;
+  margin: 0;
+}
+
+.subsidebar-item {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 14px;
+  color: #333;
+  display: block;
+}
+
+.subsidebar-item:hover {
+  background-color: #ddd; /* Add a hover effect to the links */
+}
+
+.subsidebar-item2{
+  text-decoration: none;
+  color:#333
+}

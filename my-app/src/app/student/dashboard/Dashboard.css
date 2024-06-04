@@ -1,0 +1,40 @@
+.dashboard {
+    margin-left: 200px; /* Account for sidebar width */
+    display: flex;
+    flex-direction: column;
+    margin-top: 0%;
+}
+
+.dashboard-header {
+    padding: 20px;
+    order: 1;
+    text-align: center;
+}
+
+.dashboard-header-content{
+    font-size: large;
+    font-weight: bold;
+}
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 20px;
+    padding: 0 20px 20px 20px;
+    order: 2;
+}  
+  /* Update the course-card class if necessary */
+  .course-card {
+    border-radius: 4px;
+    padding: 20px;
+    color: #fff;
+    height: 200px; /* Adjust height as needed */
+  }
+  
+  /* Color classes */
+  .red { background-color: #e74c3c; }
+  .purple { background-color: #9b59b6; }
+  .green { background-color: #2ecc71; }
+  .blue { background-color: #3498db; }
+  
+  /* Additional styling for other colors and elements */
+  

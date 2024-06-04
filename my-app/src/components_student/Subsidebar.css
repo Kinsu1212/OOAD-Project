@@ -1,0 +1,22 @@
+.subsidebar {
+    background-color: #afaeae; /* Light grey background */
+    width: 15vb; /* Set the width of the sidebar */
+    height: 100vh; /* Full-height */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    left: 15vb;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+  }
+  
+  .subsidebar-item {
+    padding: 6px 8px 6px 8px;
+    text-decoration: none;
+    font-size: 14px;
+    text-align: left;
+    color: #333;
+    display: block;
+  }
+  
+  .subsidebar-item:hover {
+    background-color: #ddd; /* Add a hover effect to the links */
+  }

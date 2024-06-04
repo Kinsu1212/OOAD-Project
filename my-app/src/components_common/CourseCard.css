@@ -1,0 +1,32 @@
+
+.course-card {
+    border-radius: 4px;
+    padding: 20px;
+    color: #fff;
+    margin-bottom: 20px; /* For spacing between cards */
+    height: 200px; /* Adjust height as needed */
+}
+.course-card:hover {
+    transform: scale(1.05); /* Enlarge the card */
+}
+.course-title{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+
+}
+
+.course-code{
+    font-size: 16px;
+    margin-bottom: 10px;
+
+}
+/* Add specific colors for course cards */
+.red { background-color: #e74c3c; }
+.purple { background-color: #9b59b6; }
+.green { background-color: #2ecc71; }
+
+/* Additional CSS */
+.card-links{
+    text-decoration: none;
+}

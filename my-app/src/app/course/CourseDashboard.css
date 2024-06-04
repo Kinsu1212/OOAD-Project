@@ -1,0 +1,6 @@
+.course-dashboard{
+    margin-left: 30%; /* Account for sidebar width */
+    display: flex;
+    flex-direction: column;
+    margin-top: 0%;
+}

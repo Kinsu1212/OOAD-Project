@@ -1,0 +1,72 @@
+/* CSS for Displaying Announcements */
+.announcement-list {
+    /* width: 70%; */
+    font-family: Arial, sans-serif;
+    margin-left: 20%;
+    /* margin: 20px 0; */
+}
+
+.announcement-item {
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.announcement-content {
+    flex-grow: 1;
+}
+
+
+/* Main Content Area CSS */
+.main-content {
+    margin-left: 5000px; /* Push main content to the right to not overlap with sidebar */
+    padding: 20px; /* Padding for aesthetics */
+    min-height: 100vh; /* Full view height */
+    background-color: #fff; /* White background for content area */
+    position: relative; /* Position relative to normal flow */
+    z-index: 1; /* Lower than sidebar to avoid overlap issues */
+}
+
+/* Title area inside the main content, to ensure it doesn't go behind the sidebar */
+.title-area {
+    margin-left: 50px; /* Adjust accordingly if the sidebar width changes */
+}
+
+
+.announcement-title {
+    font-size: 16px;
+    color: #2a2a2a;
+    margin: 0;
+    font-weight: bold;
+}
+
+.announcement-summary {
+    font-size: 14px;
+    color: #666;
+    margin: 5px 0;
+}
+
+.announcement-date {
+    font-size: 12px;
+    color: #999;
+    text-align: right;
+    white-space: nowrap;
+}
+
+.announcement-link {
+    margin-left: 20px;
+    color: #3a8ee6;
+    text-decoration: none;
+}
+
+.announcement-link:hover {
+    text-decoration: underline;
+}
+
+.announcement-important {
+    background-color: #ffefef;
+    border-left: 4px solid #e63946;
+}

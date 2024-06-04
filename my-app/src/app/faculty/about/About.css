@@ -1,0 +1,33 @@
+.about {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .about h1 {
+    color: #333;
+    font-size: 24px;
+  }
+  
+  .about p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  .about a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  
+  .about a:hover {
+    background-color: #0056b3;
+  }
+  

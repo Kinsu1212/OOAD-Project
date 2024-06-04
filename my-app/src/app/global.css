@@ -1,0 +1,10 @@
+/* html, body {
+    margin: 0;
+    padding: 0;
+} */
+
+html, body {
+     margin: 0; 
+    padding: 0;
+    box-sizing: border-box; /* This ensures padding and borders do not affect the overall width and height of elements */
+}

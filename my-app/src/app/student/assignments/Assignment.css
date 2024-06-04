@@ -1,0 +1,39 @@
+/* Assignment.css */
+.assignment-list {
+    margin: 20px;
+    padding: 0;
+    list-style-type: none;
+  }
+  
+  .assignment-item {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    margin-top: 10px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .assignment-item h3 {
+    font-size: 1.4rem;
+    margin-bottom: 5px;
+  }
+  
+  .assignment-item p {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    line-height: 1.6;
+  }
+  
+  .assignment-item span {
+    display: block;
+    color: #333;
+    font-size: 0.9rem;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  .assignment-item span:first-of-type {
+    margin-bottom: 5px;
+  }
+  

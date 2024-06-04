@@ -1,0 +1,30 @@
+
+.sidebar {
+    background-color: #f4f4f4; /* Light grey background */
+    width: 15vb; /* Set the width of the sidebar */
+    height: 100vh; /* Full-height */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    left: 0;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+  }
+  
+  .sidebar-item {
+    padding: 6px 8px 6px 16px;
+    
+  }
+  
+  .sidebar-item2{
+    text-decoration: none;
+    text-decoration: none;
+    font-size: 14px;
+    color: #333;
+    display: block;
+  }
+  .sidebar-item:hover {
+    background-color: #ddd; /* Add a hover effect to the links */
+  }
+  
+.sidebar-item-links{
+  text-decoration: none;
+}

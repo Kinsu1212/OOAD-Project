@@ -1,0 +1,50 @@
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar {
+  background-color: #f4f4f4;
+  width: 15vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;/*  Ensures it starts from the very top of the viewport */
+  left: 0;
+  overflow-x: hidden;
+  padding: 0; /* Ensure no padding inside the sidebar*/
+  margin: 0; /* Reset any margins that might be applied*/
+}
+
+.sidebar-item {
+  padding: 12px 16px;
+  text-decoration: none;
+  font-size: 16px;
+  display: block;
+  transition: background-color 0.3s;
+  text-align: center;
+}
+.sidebar-item2{
+  text-decoration: none;
+  color: #333;
+}
+.sidebar-item.active {
+  background-color: darkgray; /* Highlight active item */
+}
+
+.sidebar-item:hover {
+  background-color: #ddd;
+}
+
+/* Style scrollbar (for Chrome, Edge, and Safari) */
+.sidebar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  border-radius: 10px;
+}
+.sidebar-item.logout:hover {
+  background-color: #ddd;/* Example to make the logout button stand out */
+}
+
