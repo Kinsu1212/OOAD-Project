@@ -13,7 +13,7 @@
 
 //   const fetchCourseContent = async () => {
 //     try {
-//       const response = await fetch('http://localhost:5000/get_course_content', {
+//       const response = await fetch('http://ec2-54-153-120-83.us-west-1.compute.amazonaws.com:5000/get_course_content', {
 //         method: 'POST',
 //         headers: {
 //           'Content-Type': 'application/json'
@@ -48,7 +48,7 @@
 //   const handleSubmit = async (e) => {
 //     e.preventDefault();
 //     try {
-//       const response = await fetch('http://localhost:5000/add_course_content', {
+//       const response = await fetch('http://ec2-54-153-120-83.us-west-1.compute.amazonaws.com:5000/add_course_content', {
 //         method: 'POST',
 //         headers: {
 //           'Content-Type': 'application/json'
@@ -112,7 +112,7 @@
 
 // //     const fetchCourseContent = async () => {
 // //         try {
-// //             const response = await axios.post('http://localhost:5000/get_course_content', { course_id: 'YOUR_COURSE_ID_HERE' });
+// //             const response = await axios.post('http://ec2-54-153-120-83.us-west-1.compute.amazonaws.com:5000/get_course_content', { course_id: 'YOUR_COURSE_ID_HERE' });
 // //             const { course_title, course_content } = response.data;
 // //             setTitle(course_title);
 // //             setContent(course_content);
@@ -123,7 +123,7 @@
 
 // //     const handleSubmit = async () => {
 // //         try {
-// //             const response = await axios.post('http://localhost:5000/update_course_content', {
+// //             const response = await axios.post('http://ec2-54-153-120-83.us-west-1.compute.amazonaws.com:5000/update_course_content', {
 // //                 course_id: 'YOUR_COURSE_ID_HERE',
 // //                 title,
 // //                 content
@@ -170,7 +170,7 @@
 
 //     const fetchQuizzes = async () => {
 //       try {
-//         const response = await fetch('http://localhost:5000/get_course_content', {
+//         const response = await fetch('http://ec2-54-153-120-83.us-west-1.compute.amazonaws.com:5000/get_course_content', {
 //                                   method: 'POST',
 //                                   headers: {
 //                                     'Content-Type': 'application/json'
@@ -206,7 +206,7 @@
 //   const handleSubmit = async (e) => {
 //     e.preventDefault();
 //     try {
-//       const response = await fetch('http://localhost:5000/add_course_content', {
+//       const response = await fetch('http://ec2-54-153-120-83.us-west-1.compute.amazonaws.com:5000/add_course_content', {
 //         method: 'POST',
 //         headers: {
 //           'Content-Type': 'application/json'
@@ -306,7 +306,7 @@ function About() {
     //   }
 
     async function fetchCourseContent() {
-      const response = await fetch('http://localhost:5000/get_course_content', {
+      const response = await fetch('http://ec2-54-153-120-83.us-west-1.compute.amazonaws.com:5000/get_course_content', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ course_id: localStorage.getItem('courseCode')})

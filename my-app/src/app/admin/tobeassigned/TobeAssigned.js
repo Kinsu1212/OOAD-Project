@@ -15,7 +15,7 @@ function TobeAssigned() {
 
   const fetchCourses = async () => {
     try {
-      const response = await fetch('http://localhost:5000/get_courses_tobe_assigned', {
+      const response = await fetch('http://ec2-54-153-120-83.us-west-1.compute.amazonaws.com:5000/get_courses_tobe_assigned', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({})  // Sending empty JSON object
@@ -35,7 +35,7 @@ function TobeAssigned() {
 
   const fetchFaculty = async () => {
     try {
-      const response = await fetch('http://localhost:5000/get_faculty_user_ids', {
+      const response = await fetch('http://ec2-54-153-120-83.us-west-1.compute.amazonaws.com:5000/get_faculty_user_ids', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({}) 
@@ -60,7 +60,7 @@ function TobeAssigned() {
     if (!facultyId) return;
 
     try {
-      await fetch('http://localhost:5000/assign_course', {
+      await fetch('http://ec2-54-153-120-83.us-west-1.compute.amazonaws.com:5000/assign_course', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ course_id: courseId, faculty_id: facultyId })

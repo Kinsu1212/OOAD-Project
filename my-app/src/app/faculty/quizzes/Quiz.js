@@ -16,7 +16,7 @@
 //     const fetchQuizzes = async () => {
 //       try {
 //         localStorage.setItem('assignment_type', 'quiz');
-//         const response = await fetch('http://localhost:5000/get_assignment', {
+//         const response = await fetch('http://ec2-54-153-120-83.us-west-1.compute.amazonaws.com:5000/get_assignment', {
 //                                   method: 'POST',
 //                                   headers: {
 //                                     'Content-Type': 'application/json'
@@ -52,7 +52,7 @@
 //   const handleSubmit = async (e) => {
 //     e.preventDefault();
 //     try {
-//       const response = await fetch('http://localhost:5000/create_assignment', {
+//       const response = await fetch('http://ec2-54-153-120-83.us-west-1.compute.amazonaws.com:5000/create_assignment', {
 //         method: 'POST',
 //         headers: {
 //           'Content-Type': 'application/json'
@@ -84,7 +84,7 @@
 //   const togglePublish = async (quizId, isPublished) => {
 //     try {
 //       localStorage.setItem('assignment_id', quizId);
-//       const response = await fetch(`http://localhost:5000/toggle_publish/${quizId}`, {
+//       const response = await fetch(`http://ec2-54-153-120-83.us-west-1.compute.amazonaws.com:5000/toggle_publish/${quizId}`, {
 //         method: 'POST',
 //         headers: { 'Content-Type': 'application/json' },
 //         body: JSON.stringify({is_published: isPublished ? 0 : 1 })  // Toggle the state
@@ -157,7 +157,7 @@ function Quiz() {
     const fetchQuizzes = async () => {
       try {
         localStorage.setItem('assignment_type', 'quiz');
-        const response = await fetch('http://localhost:5000/get_assignment', {
+        const response = await fetch('http://ec2-54-153-120-83.us-west-1.compute.amazonaws.com:5000/get_assignment', {
                                   method: 'POST',
                                   headers: {
                                     'Content-Type': 'application/json'
@@ -193,7 +193,7 @@ function Quiz() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch('http://localhost:5000/create_assignment', {
+      const response = await fetch('http://ec2-54-153-120-83.us-west-1.compute.amazonaws.com:5000/create_assignment', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -225,7 +225,7 @@ function Quiz() {
   const togglePublish = async (quizId, isPublished) => {
     try {
       localStorage.setItem('assignment_id', quizId);
-      const response = await fetch(`http://localhost:5000/toggle_publish/${quizId}`, {
+      const response = await fetch(`http://ec2-54-153-120-83.us-west-1.compute.amazonaws.com:5000/toggle_publish/${quizId}`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({is_published: isPublished ? 0 : 1 })  // Toggle the state

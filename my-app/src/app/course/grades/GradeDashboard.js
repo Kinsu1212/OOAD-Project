@@ -27,7 +27,7 @@ function GradesDashboard() {
     const fetchGrades = async () => {
       try {
         //localStorage.setItem('user_id', 418); // this should be then later handled by login, the logic page will implement it and we can then just read it
-        const response = await fetch('http://localhost:5000/get_course_grades', {
+        const response = await fetch('http://ec2-54-153-120-83.us-west-1.compute.amazonaws.com:5000/get_course_grades', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json'
