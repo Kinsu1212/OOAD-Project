@@ -712,7 +712,7 @@ def get_syllabus():
  # Running app
 if __name__ == '__main__':  
     engine = get_engine()
-    app.run(debug=True)
+    app.run(debug=True, host='0.0.0.0', port=5000)
     
 
     
