@@ -9,7 +9,7 @@ function Announcement() {
   useEffect(() => {
     const fetchAnnouncement = async () => {
       try {
-        const response = await fetch('ec2-54-183-22-164.us-west-1.compute.amazonaws.com:5000/get_announcement', {
+        const response = await fetch('http://ec2-54-183-22-164.us-west-1.compute.amazonaws.com:5000/get_announcement', {
                                   method: 'POST',
                                   headers: {
                                     'Content-Type': 'application/json'

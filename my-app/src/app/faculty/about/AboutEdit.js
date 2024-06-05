@@ -8,7 +8,7 @@ function AboutEdit({}) {
 
   useEffect(() => {
     async function fetchCourseContent() {
-      const response = await fetch('ec2-54-183-22-164.us-west-1.compute.amazonaws.com:5000/get_course_content', {
+      const response = await fetch('http://ec2-54-183-22-164.us-west-1.compute.amazonaws.com:5000/get_course_content', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ course_id: localStorage.getItem('course_id') })
@@ -44,7 +44,7 @@ function AboutEdit({}) {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const response = await fetch('ec2-54-183-22-164.us-west-1.compute.amazonaws.com:5000/edit_course_content', {
+    const response = await fetch('http://ec2-54-183-22-164.us-west-1.compute.amazonaws.com:5000/edit_course_content', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ course_id, title, content, syllabus })
