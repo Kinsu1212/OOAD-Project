@@ -10,7 +10,7 @@ function Dashboard() {
     // Fetch the current courses from the database
     const fetchCurrentCourses = async () => {
       try {
-        const response = await fetch('http://ec2-54-153-39-198.us-west-1.compute.amazonaws.com:5000/get_current_faculty_courses', {
+        const response = await fetch('https://ec2-54-67-80-169.us-west-1.compute.amazonaws.com:3000:5000/get_current_faculty_courses', {
                                   method: 'POST',
                                   headers: {
                                     'Content-Type': 'application/json'
@@ -27,7 +27,7 @@ function Dashboard() {
     // Fetch the unpublished courses from the database
     const fetchUnpublishedCourses = async () => {
       try {
-        const response = await fetch('http://ec2-54-153-39-198.us-west-1.compute.amazonaws.com:5000/get_unpublished_faculty_courses', {
+        const response = await fetch('https://ec2-54-67-80-169.us-west-1.compute.amazonaws.com:3000:5000/get_unpublished_faculty_courses', {
                                   method: 'POST',
                                   headers: {
                                     'Content-Type': 'application/json'

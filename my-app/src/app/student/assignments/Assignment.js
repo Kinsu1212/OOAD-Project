@@ -10,7 +10,7 @@ function Assignment() {
     const fetchAssignments = async () => {
       try {
         localStorage.setItem('assignment_type', 'homework');
-        const response = await fetch('http://ec2-54-153-39-198.us-west-1.compute.amazonaws.com:5000/get_assignment', {
+        const response = await fetch('https://ec2-54-67-80-169.us-west-1.compute.amazonaws.com:3000:5000/get_assignment', {
                                   method: 'POST',
                                   headers: {
                                     'Content-Type': 'application/json'

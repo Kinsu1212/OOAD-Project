@@ -12,7 +12,7 @@ async function get_current_assignment() {
     // localStorage.setItem('role', 'student');
     // localStorage.setItem('course_id', 106);
 
-    const response = await fetch(`http://ec2-54-153-39-198.us-west-1.compute.amazonaws.com:5000/get_assignment`,
+    const response = await fetch(`https://ec2-54-67-80-169.us-west-1.compute.amazonaws.com:3000:5000/get_assignment`,
       {
         method: 'POST',
         headers: {
