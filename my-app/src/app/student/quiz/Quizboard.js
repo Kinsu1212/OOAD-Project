@@ -7,7 +7,7 @@ import { useEffect, useState } from 'react';
 async function get_current_quiz() {
   try {
 
-    const response = await fetch(`http://ec2-54-67-80-169.us-west-1.compute.amazonaws.com:5000/get_quiz`,
+    const response = await fetch(`http://ec2-18-144-147-186.us-west-1.compute.amazonaws.com:5000/get_quiz`,
       {
         method: 'POST',
         headers: {

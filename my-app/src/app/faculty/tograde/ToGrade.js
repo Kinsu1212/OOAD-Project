@@ -7,7 +7,7 @@ function ToGrade() {
     useEffect(() => {
         async function fetchAssignments() {
             try {
-                const response = await fetch('http://ec2-54-67-80-169.us-west-1.compute.amazonaws.com:5000/get_tograde_assignments', {
+                const response = await fetch('http://ec2-18-144-147-186.us-west-1.compute.amazonaws.com:5000/get_tograde_assignments', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({ course_id: localStorage.getItem('courseCode') })
@@ -38,7 +38,7 @@ function ToGrade() {
         }
 
         try {
-            const response = await fetch('http://ec2-54-67-80-169.us-west-1.compute.amazonaws.com:5000/assign_grade', {
+            const response = await fetch('http://ec2-18-144-147-186.us-west-1.compute.amazonaws.com:5000/assign_grade', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({
