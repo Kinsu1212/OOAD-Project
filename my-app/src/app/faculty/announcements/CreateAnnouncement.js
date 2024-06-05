@@ -9,7 +9,7 @@ const CreateAnnouncement = ({ fetchAnnouncements,reload, setReload }) => {
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
-      const response = await fetch('https://ec2-54-67-80-169.us-west-1.compute.amazonaws.com:3000:5000/create_announcement', {
+      const response = await fetch('https://ec2-54-67-80-169.us-west-1.compute.amazonaws.com:5000/create_announcement', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
