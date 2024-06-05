@@ -10,7 +10,7 @@ function People() {
       try {
         //localStorage.setItem('course_id', 110); // This should ideally be passed as a prop or through context
       
-        const response = await fetch('https://ec2-54-67-80-169.us-west-1.compute.amazonaws.com:5000/people_in_course', {
+        const response = await fetch('http://ec2-54-67-80-169.us-west-1.compute.amazonaws.com:5000/people_in_course', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ course_id: localStorage.getItem('courseCode') })

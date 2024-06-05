@@ -11,7 +11,7 @@ function Dashboard() {
     const fetchCourses = async () => {
       try {
         //localStorage.setItem('user_id', 418); // this should be then later handled by login, the logic page will implement it and we can then just read it
-        const response = await fetch('https://ec2-54-67-80-169.us-west-1.compute.amazonaws.com:5000/get_current_courses', {
+        const response = await fetch('http://ec2-54-67-80-169.us-west-1.compute.amazonaws.com:5000/get_current_courses', {
                                   method: 'POST',
                                   headers: {
                                     'Content-Type': 'application/json'
