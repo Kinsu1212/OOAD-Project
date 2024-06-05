@@ -18,7 +18,7 @@ export default function Page() {
 
     // Attempt to authenticate user
     try {
-      const response = await fetch('http://ec2-54-183-22-164.us-west-1.compute.amazonaws.com:5000/get_user_data', {
+      const response = await fetch('http://ec2-54-153-39-198.us-west-1.compute.amazonaws.com:5000/get_user_data', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ user_id: userId, password: password })

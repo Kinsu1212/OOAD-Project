@@ -10,7 +10,7 @@ function Quiz() {
     const fetchQuizzes = async () => {
         localStorage.setItem('assignment_type', 'quiz');
       try {
-        const response = await fetch('http://ec2-54-183-22-164.us-west-1.compute.amazonaws.com:5000/get_assignment', {
+        const response = await fetch('http://ec2-54-153-39-198.us-west-1.compute.amazonaws.com:5000/get_assignment', {
                                   method: 'POST',
                                   headers: {
                                     'Content-Type': 'application/json'

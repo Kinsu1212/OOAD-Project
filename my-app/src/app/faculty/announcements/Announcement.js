@@ -15,7 +15,7 @@ function Announcement() {
 
   const fetchAnnouncements = async () => {
     try {
-      const response = await fetch('http://ec2-54-183-22-164.us-west-1.compute.amazonaws.com:5000/get_announcement', {
+      const response = await fetch('http://ec2-54-153-39-198.us-west-1.compute.amazonaws.com:5000/get_announcement', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ course_id: localStorage.getItem('courseCode'), role: localStorage.getItem('role')})
